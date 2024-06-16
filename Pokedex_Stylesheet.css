@@ -1,5 +1,5 @@
 body {
-    background: url("pokemon-bg.jpg");
+    background: url("./pokemon-bg.jpg") no-repeat;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -9,22 +9,28 @@ body {
     height: 500px;
     border: 10px solid lightgray;
     border-radius: 10px;
+
+    /* background-color: green; */
     display: flex;
     margin: 0 auto;
     margin-top: 60px;
-    background: url("pokeball.jpg") no-repeat;
+
+    background: url("./pokeball.jpg") no-repeat;
     background-size: cover;
+
 }
 
 #pokemon-info {
     width: 250px;
     height: 500px;
+    /* background-color: cyan; */
     text-align: center;
 }
 
 #pokemon-list {
     width: 250px;
     height: 500px;
+    /* background-color: yellow; */
     font-size: 18px;
     overflow-y: auto;
 }
@@ -35,6 +41,7 @@ body {
     background-color: white;
     margin: 5px;
     padding: 5px;
+
 }
 
 #pokemon-info img {
@@ -57,6 +64,7 @@ body {
     border-radius: 10px;
 }
 
+
 .normal {
     background-color: beige;
     color: black;
@@ -64,7 +72,7 @@ body {
 
 .fire {
     background-color: orange;
-    color: black;
+    color: white;
 }
 
 .grass {
@@ -142,7 +150,7 @@ body {
     color: white;
 }
 
-.posion {
+.poison {
     background-color: darkviolet;
     color: white;
 }
@@ -153,6 +161,7 @@ body {
     background-color: white;
     border: 1px solid black;
     border-radius: 10px;
+
     margin: 0 auto;
     margin-top: 10px;
     padding: 2px;
