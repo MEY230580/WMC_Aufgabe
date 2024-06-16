@@ -1,5 +1,5 @@
 const pokemonCount = 500;
-var pokedex = {}; // {1 : {"name" : "bulbsaur", "img" : url, "type" : ["grass", "poison"], "desc" : "...."} }
+var pokedex = {};
 
 window.onload = async function() {
     for (let i = 1; i <= pokemonCount; i++) {
@@ -41,7 +41,7 @@ function updatePokemon(){
          let type = document.createElement("span");
         type.innerText = types[i]["type"]["name"].charAt(0).toUpperCase() + types[i]["type"]["name"].slice(1).toLowerCase();
         type.classList.add("type-box");
-        type.classList.add(types[i]["type"]["name"]); //adds background color and font color
+        type.classList.add(types[i]["type"]["name"]);
         typesDiv.append(type);
     }
     document.getElementById("pokemon-description").innerText = pokedex[this.id]["desc"];
