@@ -1,5 +1,5 @@
 const pokemonCount = 500;
-var pokedex = {};
+const pokedex = {};
 
 window.onload = async function() {
     for (let i = 1; i <= pokemonCount; i++) {
